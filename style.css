@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+    --bg-color : #E2F4C5;
+    --color-1 : rgb(27,27,26);
+    --color-2 : #58A399;
+    --color-3 : #A35862;
+    --color-4 : #87A358;
+    --color-5 : #8B503B;
+}
+
+body {
+    background-color: var(--color-1);
+    margin: 0px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.vp-1 {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg-color);
+    border-radius: 5px;
+}
+
+.vp-text-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#container {
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 80pt;
+    top: 40%;
+    filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    left: 50;
+    display: inline-block;
+    font-family: "Raleway", sans-serif;
+    font-size: 9rem;
+    text-align: center;
+    user-select: none;
+}
+
+.entry-text{
+    user-select: none;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    color: var(--color-1);
+}
+
+.entry-text .upper-t{
+    font-family: "Roboto Slab", serif;
+    position: absolute;
+    width: 100%;
+    top: 51.5%;
+    font-size: 3.6rem;
+}
+
+.entry-text .lower-t{
+    position: absolute;
+    top: 59.8%;
+    width: 100%;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.7rem;
+}
+
+.vp-2 {
+    position: absolute;
+    background-color: var(--color-1);
+    top: 100vh;
+    left: 0vw;
+    height: 100vh;
+    width: 100vw;
+    user-select: none;
+}
+
+.vp-text-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.bg-brk-img{
+    position: absolute;
+    height: 90vh;
+    top: 5vh;
+    left: 23vw;
+    user-select: none;
+}
+.abtme-heading{
+    position: absolute;
+    top: 46.2vh;
+    left: 1.3vw;
+    color: var(--color-3);
+    font-family: "Oswald", sans-serif;
+    font-size: 5.5vw;
+}
+
+.text-main{
+    position: absolute;
+    height: 80vh;
+    width: 60vw;
+    top: 9.5vh;
+    left: 57.5vh;
+    margin: none;
+    color: var(--color-3);
+    background-color: transparent;
+    font-family: "Ubuntu Sans", sans-serif;
+    font-size: 1.4rem;
+    text-align :justify;
+}
+
+.vp-3 {
+    position: absolute;
+    height: 300vh;
+    width: 100vw;
+    top: 200vh;
+    left: 0vw; 
+    background-color: var(--color-1);
+}
+
+
+.skl-wrk-img {
+    position: absolute;
+    top: 33%;
+    height: 100vh;
+    width: 100vw;
+    left: 0%;
+    z-index: 2;
+    user-select: none;
+}
+
+.skills {
+    position: absolute;
+    height: 200vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.works {
+    position: absolute;
+    height: 168.8vh;
+    width: 100vw;
+    bottom: 0;
+    clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
+    background-color: var(--bg-color);
+    z-index: 1;
+}
+
+/* .works:hover {
+    position: absolute;
+    height: 167.8vh;
+    width: 100vw;
+    bottom: 0;
+    background-color: red;
+    z-index: 1;
+} */
+
+.display-section-skill {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: var(--color-1);
+}
+
+/* .skl-block {
+    background-color: rgb(21, 21, 21);
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px black;
+} */
+
+.wrk-list {
+    position: absolute;
+    bottom: 1.75%;
+    left: 5%;
+    height: 95vh;
+    width: 58vw;
+    background-image: url("./Images/content-bg.svg");
+    background-repeat: no-repeat;
+    background-position-y: 13vh;
+    background-color: var(--color-1);
+    border-radius: 30px;
+}
+
+.wrk-display {
+    position: absolute;
+    bottom: 1.75%;
+    right: 5%;
+    height: 95vh;
+    width: 30vw;
+    background-color: var(--color-1);
+    border-radius: 30px;
+}
+
+#image {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+/* .creative-skl:hover {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    height: 90vh;
+    width: 44vw;
+    
+} */
+
+.creative-ico {
+    position: absolute;
+    width: auto;
+    left: 50%;
+    top : 6%;
+    border-radius: 180%;
+    border-width: 5px;
+    padding: 20px;
+    border-style: dashed;
+    color: #58A399;
+}
+
+.wrap-text-creative {
+    color: #58A399;
+    font-family: "Teko", sans-serif;
+    width: 100%;
+    text-align: center;
+    font-size: 4em;
+    user-select: none;
+    /* margin: auto; */
+}
+
+.wrap-text-technical {
+    color: #58A399;
+    font-family: "Teko", sans-serif;
+    width: 100%;
+    text-align: center;
+    font-size: 4em;
+    user-select: none;
+}
+
+.text-box-details {
+    position: absolute;
+    top: auto;
+    right: 0;
+    height: 62.5%;
+    width: 94%;
+    margin : 3%;
+    background-color: red;
+    border-end-start-radius: 5px;
+    border-end-end-radius: 5px;
+}
+
+.content-heading {
+    position: absolute;
+    top: 0;
+    margin-top: 20px;
+    color: var(--color-4);
+    font-family: "Teko", sans-serif;
+    font-size: 7rem;
+    width: 100%;
+    text-align: center;
+    user-select: none;
+}
+
+.content-list {
+    position: absolute;
+    width: auto;
+    top: 14%;
+    left: 5%;
+    color: var(--color-4);
+    font-family: "Teko", sans-serif;
+    font-size: 2.5rem;
+}
